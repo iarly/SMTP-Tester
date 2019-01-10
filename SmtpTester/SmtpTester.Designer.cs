@@ -71,7 +71,6 @@
 			// 
 			this.txtServer.Location = new System.Drawing.Point(77, 10);
 			this.txtServer.Name = "txtServer";
-			this.txtServer.ReadOnly = true;
 			this.txtServer.Size = new System.Drawing.Size(140, 20);
 			this.txtServer.TabIndex = 1;
 			// 
@@ -88,14 +87,12 @@
 			// 
 			this.txtPort.Location = new System.Drawing.Point(262, 10);
 			this.txtPort.Name = "txtPort";
-			this.txtPort.ReadOnly = true;
 			this.txtPort.Size = new System.Drawing.Size(140, 20);
 			this.txtPort.TabIndex = 3;
 			// 
 			// chkEnableTLS
 			// 
 			this.chkEnableTLS.AutoSize = true;
-			this.chkEnableTLS.Enabled = false;
 			this.chkEnableTLS.Location = new System.Drawing.Point(408, 12);
 			this.chkEnableTLS.Name = "chkEnableTLS";
 			this.chkEnableTLS.Size = new System.Drawing.Size(46, 17);
@@ -116,7 +113,6 @@
 			// 
 			this.txtFrom.Location = new System.Drawing.Point(77, 106);
 			this.txtFrom.Name = "txtFrom";
-			this.txtFrom.ReadOnly = true;
 			this.txtFrom.Size = new System.Drawing.Size(140, 20);
 			this.txtFrom.TabIndex = 11;
 			// 
@@ -235,7 +231,6 @@
 			// chkDefaultCredentials
 			// 
 			this.chkDefaultCredentials.AutoSize = true;
-			this.chkDefaultCredentials.Enabled = false;
 			this.chkDefaultCredentials.Location = new System.Drawing.Point(408, 38);
 			this.chkDefaultCredentials.Name = "chkDefaultCredentials";
 			this.chkDefaultCredentials.Size = new System.Drawing.Size(60, 17);
@@ -247,7 +242,6 @@
 			// 
 			this.txtPassword.Location = new System.Drawing.Point(262, 36);
 			this.txtPassword.Name = "txtPassword";
-			this.txtPassword.ReadOnly = true;
 			this.txtPassword.Size = new System.Drawing.Size(140, 20);
 			this.txtPassword.TabIndex = 8;
 			// 
@@ -264,7 +258,6 @@
 			// 
 			this.txtUsername.Location = new System.Drawing.Point(77, 36);
 			this.txtUsername.Name = "txtUsername";
-			this.txtUsername.ReadOnly = true;
 			this.txtUsername.Size = new System.Drawing.Size(140, 20);
 			this.txtUsername.TabIndex = 6;
 			// 

@@ -67,6 +67,11 @@ namespace SmtpTester
 		{
 			try
 			{
+				var server = txtServer.Text;
+				var port = Convert.ToInt32(txtPort.Text);
+				string userName = txtUsername.Text;
+				string password = txtPassword.Text;
+				string from = txtFrom.Text.Trim();
 				string to = txtTo.Text.Trim();
 				string cc = txtCC.Text.Trim();
 				string bcc = txtBCC.Text.Trim();
@@ -74,7 +79,7 @@ namespace SmtpTester
 				ClearErrorDisplay();
 				ShowLoading(true);
 
-				await smtpClient.TestEmail(to, cc, bcc, txtSubject.Text, txtBody.Text);
+				await smtpClient.TestEmail(server, port, chkEnableTLS.Checked, userName, password, from, to, cc, bcc, txtSubject.Text, txtBody.Text);
 
 				AppendOutput(String.Format("Message sent to {0} {1} {2}.", to, cc, bcc));
 				SetErrorDisplay(false);
